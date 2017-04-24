@@ -13,7 +13,20 @@ defmodule ExFactorioApi.Blueprint do
 
       iex> input = "0eNp9j9tqAzEMRP9lnr2QpG5C/CsllL0oiWAtG19Kl8X/Hnu30Le8CEZIM2dWDHMmH1gSzAoenUSYrxWRH9LPbZcWTzDgRBYK0tum+hjJDjPLo7P9+GSh7gNFgWWiX5hjuSmQJE5Mu98mlm/JdqBQD947KXgX67OTRlANDwpLnTUh0MgbkLvf49MF6ny2vn40wD1rQzWInmjqrJvyvHuOLreautwa3t/Vf3+FHwpxyzxrfdKfF329nEt5Adp+YYw="
       iex> ExFactorioApi.Blueprint.string_to_data(input)
-      :error_versioned
+      %{
+        blueprint: %{
+          entities: [%{
+            entity_number: 1,
+            items: [%{count: 4, item: "speed-module-3"}],
+            name: "assembling-machine-3",
+            position: %{x: 0, y: 0},
+            recipe: "offshore-pump",
+          }],
+          icons: [%{index: 1, signal: %{name: "assembling-machine-3", type: "item"}}],
+          item: "blueprint",
+          version: 64424574976,
+        }
+      }
 
   """
   def string_to_data(input)
