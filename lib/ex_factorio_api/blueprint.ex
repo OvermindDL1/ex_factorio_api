@@ -72,7 +72,7 @@ defmodule ExFactorioApi.Blueprint do
       :icons,
       :recipe,
       :signal,
-      :x, :y
+      :x, :y,
     ]
   end
 end
