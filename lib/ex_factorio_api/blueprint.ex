@@ -53,6 +53,9 @@ defmodule ExFactorioApi.Blueprint do
       iex> is_map(output.blueprint)
       true
 
+      # Utterly huge one to test:  https://gist.github.com/lawl/1109f5f1f153f864516e164906231007
+      # Dump:  https://gist.githubusercontent.com/lawl/1109f5f1f153f864516e164906231007/raw/e105199a6ae09a084baf333e0a081b1b50b11838/dump
+
   """
   def string_to_data(input)
   def string_to_data("0"<>input = all_input) do
